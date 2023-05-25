@@ -6,6 +6,7 @@ const SecondComponent = ({ cendol, handleIncrement, circleColor }) => {
   const [buttonColor, setButtonColor] = useToggle();
   const [circleBg, setCircleBg] = useState(circleColor);
 
+  // Handle Color Functionality
   const handleColor = () => {
     setButtonColor(!buttonColor);
     setCircleBg(!buttonColor ? '#272789' : '#b41e1e');
